@@ -1,0 +1,18 @@
+@mixin regularTextStyle($fontSize, $lineHeight) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+}
+
+@mixin semiboldTextStyle($fontSize, $lineHeight) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+}
+
+@mixin circle($BGColor) {
+    width: 6.25em;
+    height: 6.25em;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+    background-color: $BGColor;
+    position: relative;
+}

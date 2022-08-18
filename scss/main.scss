@@ -1,0 +1,123 @@
+@use "../scss/modules/styles.scss" as s;
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+* {
+    family: "libre_franklin", sans-serif;
+}
+
+section {
+    padding-left: $spacer * 7;
+    padding-right: $spacer * 7;
+    margin-top: $spacer * 4;
+}
+
+.section:not(:last-child) {
+    margin-bottom: $spacer * 4;
+}
+
+.skills,
+.footer {
+    background-color: s.$sectionsBGColor;
+    padding-top: $spacer * 4;
+    padding-bottom: $spacer * 4;
+}
+
+.container-header-body {
+    padding-left: $spacer * 7;
+}
+
+.justified-text {
+    text-align: justify;
+}
+
+.nav-link,
+.header-link-style {
+    @include s.regularTextStyle(1.125em, auto);
+}
+
+.header-link {
+    margin-top: 7em;
+}
+
+.header-name {
+    margin-top: 20em;
+}
+
+.nav-link:first-child {
+    @include s.regularTextStyle(1.125em, auto);
+}
+
+.progress-bar {
+    background-color: s.$maroonColor;
+}
+
+.progress {
+    background-color: s.$sandColor;
+    height: 2em;
+}
+
+.heading {
+    font-size: 1.5em;
+    color: s.$blackColor;
+}
+
+.list-group-item {
+    @include s.regularTextStyle(1.125em, auto);
+    color: s.$blackColor;
+    background-color: s.$sectionsBGColor;
+}
+
+.portfolio-semibold-style,
+.skills-semibold-style {
+    @include s.semiboldTextStyle(1.125em, 1.5625em);
+    color: s.$blackColor;
+}
+
+.portfolio-regular-style,
+.about-regular-style {
+    @include s.regularTextStyle(1.125em, 1.875em);
+    color: s.$blackColor;
+}
+
+.header-regular-style {
+    @include s.regularTextStyle(1.5em, auto);
+    margin-top: 3em;
+}
+
+.header-name-regular-style {
+    @include s.regularTextStyle(4em, auto);
+}
+
+.skills-regular-style {
+    @include s.regularTextStyle(1.125em, 1.5625em);
+    color: s.$blackColor;
+}
+
+.pictures {
+    position: relative;
+}
+
+.boats {
+    position: absolute;
+    top: 0%;
+}
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        text-align: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header-name {
+        padding: 0;
+        margin: 0;
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

@@ -1,0 +1,84 @@
+@use "./modules/styles" as s;
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.container {
+    width: 75em;
+    height: 75em;
+    background-color: s.$infoBGColor;
+    font-family: "libre_franklin", sans-serif;
+    padding: 10em;
+}
+.text-gray {
+    font-size: 1.5em;
+    color: s.$grayTextColor;
+}
+
+.text-black {
+    font-size: 2.25em;
+    color: s.$blackColor;
+}
+
+.ABC,
+.abc {
+    color: s.$grayTextColor;
+    font-size: 1.5em;
+}
+
+.numbers {
+    color: s.$grayTextColor;
+    font-size: 1.25em;
+}
+
+.white {
+    @include s.circle(#fffaf2);
+}
+.sand {
+    @include s.circle(#f5d6ab);
+    right: 25px;
+}
+.maroon {
+    @include s.circle(#c66c49);
+    right: 50px;
+}
+.brown {
+    @include s.circle(#8b4136);
+    right: 75px;
+}
+.black {
+    @include s.circle(#333333);
+    right: 100px;
+}
+
+.white-text {
+    color: #fffaf2;
+    position: absolute;
+    top: 100%;
+}
+
+.sand-text {
+    color: #f5d6ab;
+    position: absolute;
+    top: 100%;
+
+}
+
+.maroon-text {
+    color: #c66c49;
+    position: absolute;
+    top: 100%;
+}
+.brown-text {
+    color: #8b4136;
+    position: absolute;
+    top: 100%;
+}
+
+.black-text {
+    color: #333333;
+    position: absolute;
+    top: 100%;
+}
+
+.subtitle {
+    padding-bottom: 2em;
+}
